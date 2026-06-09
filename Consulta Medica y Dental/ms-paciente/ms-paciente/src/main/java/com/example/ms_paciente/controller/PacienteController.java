@@ -7,11 +7,10 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.dto.ApiResponse;
-import com.example.dto.PacienteDTO;
-import com.example.model.Paciente;
-import com.example.service.PacienteService;
-
+import com.example.ms_paciente.dto.ApiResponse;
+import com.example.ms_paciente.model.Paciente;
+import com.example.ms_paciente.dto.PacienteDTO;
+import com.example.ms_paciente.service.PacienteService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
@@ -28,6 +27,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
 import org.springframework.hateoas.EntityModel;
+
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
 @Tag(name = "Pacientes", description = "Operaciones relacionadas con pacientes")

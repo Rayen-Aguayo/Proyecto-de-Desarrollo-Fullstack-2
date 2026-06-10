@@ -6,12 +6,12 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.example.Facturacion.y.Presupuesto.client.MedicoClient;
-import com.example.Facturacion.y.Presupuesto.client.PacienteClient;
-import com.example.Facturacion.y.Presupuesto.dto.FacturacionYPresupuestoDTO;
-import com.example.Facturacion.y.Presupuesto.dto.FacturacionYPresupuestoResponse;
-import com.example.Facturacion.y.Presupuesto.model.FacturacionYPresupuesto;
-import com.example.Facturacion.y.Presupuesto.repository.FacturacionYPresupuestoRepository;
+import com.example.ms_facturacion.y.presupuesto.client.MedicoClient;
+import com.example.ms_facturacion.y.presupuesto.client.PacienteClient;
+import com.example.ms_facturacion.y.presupuesto.controller.FacturacionYPresupuesto;
+import com.example.ms_facturacion.y.presupuesto.dto.FacturacionYPresupuestoDTO;
+import com.example.ms_facturacion.y.presupuesto.dto.FacturacionYPresupuestoResponse;
+import com.example.ms_facturacion.y.presupuesto.repository.FacturacionYPresupuestoRepository;
 
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;

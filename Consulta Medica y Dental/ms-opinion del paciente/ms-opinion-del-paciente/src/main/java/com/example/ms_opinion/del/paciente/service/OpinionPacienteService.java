@@ -1,12 +1,14 @@
 package com.example.ms_opinion.del.paciente.service;
 
 import org.springframework.stereotype.Service;
-import com.example.Experiencia.del.Paciente.client.MedicoClient;
-import com.example.Experiencia.del.Paciente.client.PacienteClient;
-import com.example.Experiencia.del.Paciente.dto.OpinionPacienteDTO;
-import com.example.Experiencia.del.Paciente.dto.OpinionPacienteResponse;
-import com.example.Experiencia.del.Paciente.model.OpinionPaciente;
-import com.example.Experiencia.del.Paciente.repository.OpinionPacienteRepository;
+
+import com.example.ms_opinion.del.paciente.client.MedicoClient;
+import com.example.ms_opinion.del.paciente.client.PacienteClient;
+import com.example.ms_opinion.del.paciente.dto.OpinionPacienteDTO;
+import com.example.ms_opinion.del.paciente.dto.OpinionPacienteResponse;
+import com.example.ms_opinion.del.paciente.model.OpinionPaciente;
+import com.example.ms_opinion.del.paciente.repository.OpinionPacienteRepository;
+
 import static net.logstash.logback.argument.StructuredArguments.keyValue;
 
 import jakarta.persistence.EntityNotFoundException;

@@ -3,9 +3,8 @@ package com.example.ms_opinion.del.paciente.client;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
 
-import com.example.Experiencia.del.Paciente.dto.ApiResponse;
-import com.example.Experiencia.del.Paciente.dto.MedicoResponse;
-
+import com.example.ms_opinion.del.paciente.dto.ApiResponse;
+import com.example.ms_opinion.del.paciente.dto.MedicoResponse;
 import lombok.RequiredArgsConstructor;
 
 @Component

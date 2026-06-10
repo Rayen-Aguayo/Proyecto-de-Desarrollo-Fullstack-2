@@ -6,12 +6,12 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.example.Ficha.medica.client.MedicoClient;
-import com.example.Ficha.medica.client.PacienteClient;
-import com.example.Ficha.medica.dto.FichaMedicaDTO;
-import com.example.Ficha.medica.dto.FichaMedicaResponse;
-import com.example.Ficha.medica.model.FichaMedica;
-import com.example.Ficha.medica.repository.FichaMedicaRepository;
+import com.example.ms_ficha.medica.client.MedicoClient;
+import com.example.ms_ficha.medica.client.PacienteClient;
+import com.example.ms_ficha.medica.dto.FichaMedicaDTO;
+import com.example.ms_ficha.medica.dto.FichaMedicaResponse;
+import com.example.ms_ficha.medica.model.FichaMedica;
+import com.example.ms_ficha.medica.repository.FichaMedicaRepository;
 
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;

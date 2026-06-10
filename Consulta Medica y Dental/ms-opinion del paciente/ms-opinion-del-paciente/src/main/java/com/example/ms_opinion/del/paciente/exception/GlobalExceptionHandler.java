@@ -3,7 +3,7 @@ package com.example.ms_opinion.del.paciente.exception;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.Experiencia.del.Paciente.dto.ApiResponse;
+import com.example.ms_opinion.del.paciente.dto.ApiResponse;
 
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import java.util.*;

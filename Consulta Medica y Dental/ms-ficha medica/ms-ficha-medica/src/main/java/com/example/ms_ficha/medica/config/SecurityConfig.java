@@ -12,8 +12,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 import org.springframework.security.web.access.AccessDeniedHandler;
 
-import com.example.Ficha.medica.dto.ApiResponse;
-import com.example.Ficha.medica.security.JwtFilter;
+import com.example.ms_ficha.medica.dto.ApiResponse;
+import com.example.ms_ficha.medica.security.JwtFilter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import jakarta.servlet.http.HttpServletResponse;

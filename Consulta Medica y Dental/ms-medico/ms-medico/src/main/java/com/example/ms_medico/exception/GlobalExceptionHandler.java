@@ -3,7 +3,7 @@ package com.example.ms_medico.exception;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.Medico.dto.ApiResponse;
+import com.example.ms_medico.dto.ApiResponse;
 
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import java.util.*;

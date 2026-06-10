@@ -3,7 +3,7 @@ package com.example.ms_pagos.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.example.Pagos.model.Pagos;
+import com.example.ms_pagos.model.Pagos;
 
 @Repository
 public interface PagosRepository extends JpaRepository<Pagos, Long> {

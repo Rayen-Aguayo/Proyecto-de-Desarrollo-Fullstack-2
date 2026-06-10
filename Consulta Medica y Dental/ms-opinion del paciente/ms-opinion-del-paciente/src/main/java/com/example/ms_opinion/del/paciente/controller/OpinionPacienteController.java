@@ -7,10 +7,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.Experiencia.del.Paciente.dto.ApiResponse;
-import com.example.Experiencia.del.Paciente.dto.OpinionPacienteDTO;
-import com.example.Experiencia.del.Paciente.dto.OpinionPacienteResponse;
-import com.example.Experiencia.del.Paciente.service.OpinionPacienteService;
+import com.example.ms_opinion.del.paciente.dto.ApiResponse;
+import com.example.ms_opinion.del.paciente.dto.OpinionPacienteDTO;
+import com.example.ms_opinion.del.paciente.dto.OpinionPacienteResponse;
+import com.example.ms_opinion.del.paciente.service.OpinionPacienteService;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -19,7 +19,9 @@ import lombok.RequiredArgsConstructor;
 @RequestMapping("/api/v1/opiniones")
 @RequiredArgsConstructor
 public class OpinionPacienteController {
+
     private final OpinionPacienteService opinionPacienteService;
+    
     @PostMapping
     @PreAuthorize("hasAnyRole('USER', 'ADMIN')")
     public ResponseEntity<ApiResponse<OpinionPacienteResponse>> crear(@Valid @RequestBody OpinionPacienteDTO dto,@RequestHeader("Authorization") String token) {

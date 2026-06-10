@@ -4,9 +4,9 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.example.Registro.de.materiales.dto.RegistroMaterialesDTO;
-import com.example.Registro.de.materiales.model.RegistroMateriales;
-import com.example.Registro.de.materiales.repository.RegistroMaterialesRepository;
+import com.example.ms_registro.de.materiales.dto.RegistroMaterialesDTO;
+import com.example.ms_registro.de.materiales.model.RegistroMateriales;
+import com.example.ms_registro.de.materiales.repository.RegistroMaterialesRepository;
 
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
@@ -18,6 +18,7 @@ import static net.logstash.logback.argument.StructuredArguments.keyValue;
 @RequiredArgsConstructor
 @Slf4j
 public class RegistroMaterialesService {
+    
     private final RegistroMaterialesRepository Repository;
 
     public RegistroMateriales crear(RegistroMaterialesDTO dto) {

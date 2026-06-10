@@ -2,8 +2,7 @@ package com.example.ms_registros.de.atenciones.exception;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import com.example.Registro.de.atenciones.dto.ApiResponse;
+import com.example.ms_registros.de.atenciones.dto.ApiResponse;
 
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import java.util.*;
@@ -38,3 +37,4 @@ public class GlobalExceptionHandler {
         );
     }
 
+}

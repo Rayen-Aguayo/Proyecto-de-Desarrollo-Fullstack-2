@@ -5,10 +5,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.Ficha.medica.dto.ApiResponse;
-import com.example.Ficha.medica.dto.FichaMedicaDTO;
-import com.example.Ficha.medica.dto.FichaMedicaResponse;
-import com.example.Ficha.medica.service.FichaMedicaService;
+import com.example.ms_ficha.medica.dto.ApiResponse;
+import com.example.ms_ficha.medica.dto.FichaMedicaDTO;
+import com.example.ms_ficha.medica.dto.FichaMedicaResponse;
+import com.example.ms_ficha.medica.service.FichaMedicaService;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

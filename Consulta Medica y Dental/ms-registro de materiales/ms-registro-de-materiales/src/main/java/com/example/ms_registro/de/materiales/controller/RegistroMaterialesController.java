@@ -7,10 +7,10 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.Registro.de.materiales.dto.ApiResponse;
-import com.example.Registro.de.materiales.dto.RegistroMaterialesDTO;
-import com.example.Registro.de.materiales.model.RegistroMateriales;
-import com.example.Registro.de.materiales.service.RegistroMaterialesService;
+import com.example.ms_registro.de.materiales.dto.ApiResponse;
+import com.example.ms_registro.de.materiales.dto.RegistroMaterialesDTO;
+import com.example.ms_registro.de.materiales.model.RegistroMateriales;
+import com.example.ms_registro.de.materiales.service.RegistroMaterialesService;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

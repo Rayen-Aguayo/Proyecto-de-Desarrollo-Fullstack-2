@@ -6,10 +6,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.Medico.dto.ApiResponse;
-import com.example.Medico.dto.MedicoDTO;
-import com.example.Medico.model.Medico;
-import com.example.Medico.service.MedicoService;
+import com.example.ms_medico.dto.ApiResponse;
+import com.example.ms_medico.dto.MedicoDTO;
+import com.example.ms_medico.model.Medico;
+import com.example.ms_medico.service.MedicoService;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

@@ -14,10 +14,11 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.Reservar.dto.ApiResponse;
-import com.example.Reservar.dto.PedirHoraDTO;
-import com.example.Reservar.dto.PedirHoraResponse;
-import com.example.Reservar.service.PedirHoraService;
+import com.example.ms_reservar.y.anular.hora.dto.ApiResponse;
+import com.example.ms_reservar.y.anular.hora.dto.PedirHoraDTO;
+import com.example.ms_reservar.y.anular.hora.dto.PedirHoraResponse;
+import com.example.ms_reservar.y.anular.hora.service.PedirHoraService;
+
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 

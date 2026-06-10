@@ -12,8 +12,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 import org.springframework.security.web.access.AccessDeniedHandler;
 
-import com.example.Registro.de.atenciones.dto.ApiResponse;
-import com.example.Registro.de.atenciones.security.JwtFilter;
+import com.example.ms_registros.de.atenciones.dto.ApiResponse;
+import com.example.ms_registros.de.atenciones.security.JwtFilter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import jakarta.servlet.http.HttpServletResponse;

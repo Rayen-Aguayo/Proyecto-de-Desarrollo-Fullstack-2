@@ -3,8 +3,8 @@ package com.example.ms_pagos.client;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
 
-import com.example.Pagos.dto.ApiResponse;
-import com.example.Pagos.dto.PacienteResponse;
+import com.example.ms_pagos.dto.ApiResponse;
+import com.example.ms_pagos.dto.PacienteResponse;
 
 import lombok.RequiredArgsConstructor;
 

@@ -5,9 +5,9 @@ import static net.logstash.logback.argument.StructuredArguments.keyValue;
 import java.util.List;
 import org.springframework.stereotype.Service;
 
-import com.example.Medico.dto.MedicoDTO;
-import com.example.Medico.model.Medico;
-import com.example.Medico.repository.MedicoRepository;
+import com.example.ms_medico.dto.MedicoDTO;
+import com.example.ms_medico.model.Medico;
+import com.example.ms_medico.repository.MedicoRepository;
 
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;

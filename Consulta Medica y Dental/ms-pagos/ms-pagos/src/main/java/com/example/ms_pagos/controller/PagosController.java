@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.Pagos.dto.ApiResponse;
-import com.example.Pagos.dto.PagosDTO;
-import com.example.Pagos.dto.PagosResponse;
-import com.example.Pagos.service.PagosService;
+import com.example.ms_pagos.dto.ApiResponse;
+import com.example.ms_pagos.dto.PagosDTO;
+import com.example.ms_pagos.dto.PagosResponse;
+import com.example.ms_pagos.service.PagosService;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

@@ -3,8 +3,8 @@ package com.example.ms_reservar.y.anular.hora.client;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
 
-import com.example.Reservar.dto.ApiResponse;
-import com.example.Reservar.dto.MedicoResponse;
+import com.example.ms_reservar.y.anular.hora.dto.ApiResponse;
+import com.example.ms_reservar.y.anular.hora.dto.MedicoResponse;
 
 import lombok.RequiredArgsConstructor;
 

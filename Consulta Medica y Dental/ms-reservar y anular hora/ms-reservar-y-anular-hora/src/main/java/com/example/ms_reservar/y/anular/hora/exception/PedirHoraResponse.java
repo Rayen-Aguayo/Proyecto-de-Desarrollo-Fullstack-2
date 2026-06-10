@@ -3,6 +3,9 @@ package com.example.ms_reservar.y.anular.hora.exception;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+import com.example.ms_reservar.y.anular.hora.dto.MedicoResponse;
+import com.example.ms_reservar.y.anular.hora.dto.PacienteResponse;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

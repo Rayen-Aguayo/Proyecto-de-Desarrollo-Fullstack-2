@@ -3,7 +3,7 @@ package com.example.ms_ficha.medica.exception;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.Ficha.medica.dto.ApiResponse;
+import com.example.ms_ficha.medica.dto.ApiResponse;
 
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import java.util.*;

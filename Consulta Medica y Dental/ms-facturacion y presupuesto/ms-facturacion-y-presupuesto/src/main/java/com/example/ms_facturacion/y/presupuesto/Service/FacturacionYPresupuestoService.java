@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.ms_facturacion.y.presupuesto.client.MedicoClient;
 import com.example.ms_facturacion.y.presupuesto.client.PacienteClient;
+import com.example.ms_facturacion.y.presupuesto.dto.FacturacionYPresupuestoDTO;
 import com.example.ms_facturacion.y.presupuesto.dto.FacturacionYPresupuestoResponse;
 import com.example.ms_facturacion.y.presupuesto.model.FacturacionYPresupuesto;
 import com.example.ms_facturacion.y.presupuesto.repository.FacturacionYPresupuestoRepository;

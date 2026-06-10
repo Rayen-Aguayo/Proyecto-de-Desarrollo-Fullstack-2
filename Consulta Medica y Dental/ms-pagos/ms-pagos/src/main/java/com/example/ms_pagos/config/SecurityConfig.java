@@ -12,8 +12,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 import org.springframework.security.web.access.AccessDeniedHandler;
 
-import com.example.Pagos.dto.ApiResponse;
-import com.example.Pagos.security.JwtFilter;
+import com.example.ms_pagos.dto.ApiResponse;
+import com.example.ms_pagos.security.JwtFilter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import jakarta.servlet.http.HttpServletResponse;

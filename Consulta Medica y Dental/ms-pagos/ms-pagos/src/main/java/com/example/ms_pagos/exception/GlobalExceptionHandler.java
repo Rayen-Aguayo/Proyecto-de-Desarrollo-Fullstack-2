@@ -3,7 +3,7 @@ package com.example.ms_pagos.exception;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.Pagos.dto.ApiResponse;
+import com.example.ms_pagos.dto.ApiResponse;
 
 import org.springframework.web.bind.MethodArgumentNotValidException;
 

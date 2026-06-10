@@ -2,10 +2,10 @@ package com.example.ms_facturacion.y.presupuesto.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.Facturacion.y.Presupuesto.Service.FacturacionYPresupuestoService;
-import com.example.Facturacion.y.Presupuesto.dto.ApiResponse;
-import com.example.Facturacion.y.Presupuesto.dto.FacturacionYPresupuestoDTO;
-import com.example.Facturacion.y.Presupuesto.dto.FacturacionYPresupuestoResponse;
+import com.example.ms_facturacion.y.presupuesto.Service.FacturacionYPresupuestoService;
+import com.example.ms_facturacion.y.presupuesto.dto.ApiResponse;
+import com.example.ms_facturacion.y.presupuesto.dto.FacturacionYPresupuestoDTO;
+import com.example.ms_facturacion.y.presupuesto.dto.FacturacionYPresupuestoResponse;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

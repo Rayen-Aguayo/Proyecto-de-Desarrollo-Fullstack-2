@@ -1,4 +1,4 @@
-package com.example.Medico.config;
+package com.example.ms_medico.config;
 
 import org.springframework.context.annotation.*;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
@@ -12,8 +12,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 import org.springframework.security.web.access.AccessDeniedHandler;
 
-import com.example.Medico.dto.ApiResponse;
-import com.example.Medico.security.JwtFilter;
+import com.example.ms_medico.dto.ApiResponse;
+import com.example.ms_medico.security.JwtFilter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import jakarta.servlet.http.HttpServletResponse;

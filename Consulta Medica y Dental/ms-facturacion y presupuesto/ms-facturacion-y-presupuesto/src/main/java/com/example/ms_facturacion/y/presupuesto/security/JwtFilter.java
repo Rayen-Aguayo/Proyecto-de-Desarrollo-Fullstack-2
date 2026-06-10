@@ -15,8 +15,6 @@ import jakarta.servlet.http.*;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
-import static net.logstash.logback.argument.StructuredArguments.keyValue;
-
 @Slf4j
 @Component
 @RequiredArgsConstructor

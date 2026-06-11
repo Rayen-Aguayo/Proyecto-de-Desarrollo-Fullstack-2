@@ -11,6 +11,7 @@ import com.example.ms_facturacion.y.presupuesto.client.PacienteClient;
 import com.example.ms_facturacion.y.presupuesto.dto.FacturacionYPresupuestoDTO;
 import com.example.ms_facturacion.y.presupuesto.dto.FacturacionYPresupuestoResponse;
 import com.example.ms_facturacion.y.presupuesto.repository.FacturacionYPresupuestoRepository;
+import com.example.ms_facturacion.y.presupuesto.model.FacturacionYPresupuesto; 
 
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
@@ -25,9 +26,13 @@ public class FacturacionYPresupuestoService {
     private final MedicoClient medicoClient;
     private final PacienteClient pacienteClient;
 
-    public FacturacionYPresupuestoResponse  crear(FacturacionYPresupuestoDTO dto, String token) {
+    public FacturacionYPresupuestoResponse crear(FacturacionYPresupuestoDTO dto, String token) {
 
-        log.info("Crear facturacion y presupuesto", keyValue("nombre del paciente", dto.getNombrePaciente()), keyValue("run del paciente", dto.getRunPaciente()), keyValue("nombre del medico", dto.getNombreMedico()), keyValue("run del medico", dto.getRunMedico()));
+        log.info("Crear facturacion y presupuesto", 
+            keyValue("nombre del paciente", dto.getNombrePaciente()), 
+            keyValue("run del paciente", dto.getRunPaciente()), 
+            keyValue("nombre del medico", dto.getNombreMedico()), 
+            keyValue("run del medico", dto.getRunMedico()));
 
         var paciente = pacienteClient.getPacienteClient(dto.getRunPaciente(), token);
 
@@ -37,8 +42,8 @@ public class FacturacionYPresupuestoService {
 
         var medico = medicoClient.getMedicoClient(dto.getRunMedico(), token);
         if (medico == null) {
-                throw new RuntimeException("El médico no existe");
-}
+            throw new RuntimeException("El médico no existe");
+        }
 
         FacturacionYPresupuesto facypre = repository.save(
                 new FacturacionYPresupuesto(
@@ -58,7 +63,6 @@ public class FacturacionYPresupuestoService {
     }
 
     public List<FacturacionYPresupuestoResponse> listar(String token) {
-
         return repository.findAll()
                 .stream()
                 .map(l -> mapToResponse(l, token))
@@ -66,7 +70,6 @@ public class FacturacionYPresupuestoService {
     }
 
     public FacturacionYPresupuestoResponse obtener(Long id, String token) {
-
         FacturacionYPresupuesto facypre = repository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("FacturacionYPresupuesto no encontrado"));
 
@@ -114,6 +117,5 @@ public class FacturacionYPresupuestoService {
                 .diasDuracion(facypre.getDiasDuracion())
                 .gestionPagos(facypre.getGestionPagos())
                 .build();
-
     }
 }

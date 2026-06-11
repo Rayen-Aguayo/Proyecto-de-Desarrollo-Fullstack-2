@@ -1,4 +1,4 @@
-package com.example.Facturacion.y.Presupuesto.config;
+package com.example.ms_facturacion.y.presupuesto.config;
 
 import org.springframework.context.annotation.*;
 import org.springframework.web.reactive.function.client.WebClient;

@@ -1,9 +1,9 @@
-package com.example.Facturacion.y.Presupuesto.exception;
+package com.example.ms_facturacion.y.presupuesto.exception;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.Facturacion.y.Presupuesto.dto.ApiResponse;
+import com.example.ms_facturacion.y.presupuesto.dto.ApiResponse;
 
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import java.util.*;

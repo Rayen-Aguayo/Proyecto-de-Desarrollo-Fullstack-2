@@ -1,4 +1,4 @@
-package com.example.Facturacion.y.Presupuesto.model;
+package com.example.ms_facturacion.y.presupuesto.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

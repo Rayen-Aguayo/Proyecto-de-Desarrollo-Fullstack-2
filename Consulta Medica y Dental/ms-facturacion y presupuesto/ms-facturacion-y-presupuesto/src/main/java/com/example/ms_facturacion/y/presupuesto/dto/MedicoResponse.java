@@ -1,4 +1,4 @@
-package com.example.Facturacion.y.Presupuesto.dto;
+package com.example.ms_facturacion.y.presupuesto.dto;
 
 import lombok.Data;
 

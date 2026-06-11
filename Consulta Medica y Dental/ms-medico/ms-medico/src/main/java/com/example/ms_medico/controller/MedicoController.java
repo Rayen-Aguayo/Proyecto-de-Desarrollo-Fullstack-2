@@ -7,6 +7,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.ms_medico.dto.ApiResponse;
+import com.example.ms_medico.dto.MedicoDTO;
 import com.example.ms_medico.model.Medico;
 import com.example.ms_medico.service.MedicoService;
 

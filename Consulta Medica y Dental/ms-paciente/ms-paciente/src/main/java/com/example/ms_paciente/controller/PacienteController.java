@@ -31,11 +31,11 @@ import org.springframework.hateoas.EntityModel;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
 @Tag(name = "Pacientes", description = "Operaciones relacionadas con pacientes")
-
 @RestController
 @RequestMapping("/api/v1/pacientes")
 @RequiredArgsConstructor
 public class PacienteController {
+
     private final PacienteService pacienteService;
 
     @Operation(
@@ -47,24 +47,21 @@ public class PacienteController {
             @io.swagger.v3.oas.annotations.responses.ApiResponse(responseCode = "401", description = "No autenticado o token inválido"),
             @io.swagger.v3.oas.annotations.responses.ApiResponse(responseCode = "403", description = "Acceso denegado")
     })
-
     @PostMapping
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<ApiResponse<Paciente>> crear(@Valid @RequestBody PacienteDTO dto) {
         Paciente paciente = pacienteService.crear(dto);
 
-//********************************* arreglarlos ********************************
         EntityModel<Paciente> recurso = EntityModel.of(paciente);
-
 
         recurso.add(
                 linkTo(methodOn(PacienteController.class).listar())
                         .withRel("all"));
 
+        // CORRECCIÓN: Sacamos el RUN directamente del objeto paciente creado usando getRun()
         recurso.add(
-                linkTo(methodOn(PacienteController.class).obtener(run))
+                linkTo(methodOn(PacienteController.class).obtener(paciente.getRun()))
                         .withSelfRel());
-        
 
         return ResponseEntity.status(201).body(
                 ApiResponse.<Paciente>builder()
@@ -74,6 +71,7 @@ public class PacienteController {
                         .build()
         );
     }
+
     @Operation(
             summary = "Listar pacientes",
             description = "Obtiene una lista de todos los pacientes. Requiere rol ADMIN."
@@ -83,29 +81,9 @@ public class PacienteController {
             @io.swagger.v3.oas.annotations.responses.ApiResponse(responseCode = "401", description = "No autenticado o token inválido"),
             @io.swagger.v3.oas.annotations.responses.ApiResponse(responseCode = "403", description = "Acceso denegado")
     })
-
     @GetMapping
     @PreAuthorize("hasAnyRole('ADMIN')")
     public ResponseEntity<ApiResponse<List<Paciente>>> listar() {
-       
-//********************************* arreglarlos ********************************
-
-        Paciente paciente = pacienteService.obtener(run);
-        EntityModel<Paciente> recurso = EntityModel.of(paciente);
-
-        recurso.add(
-                linkTo(methodOn(PacienteController.class).obtener(run))
-                        .withSelfRel());
-
-        recurso.add(
-                linkTo(methodOn(PacienteController.class).crear(null))
-                        .withRel("create"));
-        
-        recurso.add(
-                linkTo(methodOn(PacienteController.class).eliminar(run))
-                        .withRel("delete"));
-                                recurso.add();
-
         return ResponseEntity.ok(
                 ApiResponse.<List<Paciente>>builder()
                         .success(true)
@@ -114,6 +92,7 @@ public class PacienteController {
                         .build()
         );
     }
+
     @Operation(
         summary = "Obtener paciente por su run",
         description = "Busca un paciente usando su identificador (run). Requiere rol ADMIN."
@@ -124,11 +103,9 @@ public class PacienteController {
             @io.swagger.v3.oas.annotations.responses.ApiResponse(responseCode = "401", description = "No autenticado o token inválido"),
             @io.swagger.v3.oas.annotations.responses.ApiResponse(responseCode = "403", description = "Acceso denegado")
     })
-
     @GetMapping("/{run}")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<ApiResponse<EntityModel<Paciente>>> obtener(
-
             @Parameter(description = "RUN del paciente", example = "11111111-1")
             @PathVariable String run) {
 
@@ -154,8 +131,6 @@ public class PacienteController {
         recurso.add(
                 linkTo(methodOn(PacienteController.class).eliminar(run))
                         .withRel("delete"));
-                                recurso.add();
-
 
         return ResponseEntity.ok(
                 ApiResponse.<EntityModel<Paciente>>builder()
@@ -166,7 +141,6 @@ public class PacienteController {
         );
     }
 
-    
     @Operation(
             summary = "Actualizar paciente por su run",
             description = "Actualiza la información de un paciente existente. Requiere rol ADMIN."
@@ -177,18 +151,14 @@ public class PacienteController {
             @io.swagger.v3.oas.annotations.responses.ApiResponse(responseCode = "401", description = "No autenticado o token inválido"),
             @io.swagger.v3.oas.annotations.responses.ApiResponse(responseCode = "403", description = "Acceso denegado")
     })
-
     @PutMapping("/{run}")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<ApiResponse<Paciente>> actualizar(
-
         @Parameter(description = "RUN del paciente", example = "11111111-1")
         @PathVariable String run,
-
         @Valid @RequestBody PacienteDTO dto) {
 
-
-    Paciente paciente = pacienteService.actualizar(run, dto);
+        Paciente paciente = pacienteService.actualizar(run, dto);
 
         EntityModel<Paciente> recurso = EntityModel.of(paciente);
 
@@ -208,6 +178,7 @@ public class PacienteController {
                         .build()
         );
     }
+
     @Operation(
         summary = "Eliminar paciente por su run",
         description = "Busca un paciente usando su identificador (run) y lo elimina. Requiere rol ADMIN."
@@ -225,27 +196,8 @@ public class PacienteController {
         @PathVariable String run) {
 
         pacienteService.eliminar(run);
-                Paciente paciente = pacienteService.obtener(run);
 
-        EntityModel<Paciente> recurso = EntityModel.of(paciente);
-
-        recurso.add(
-                linkTo(methodOn(PacienteController.class).obtener(run))
-                        .withSelfRel());
-
-        recurso.add(
-                linkTo(methodOn(PacienteController.class).listar())
-                        .withRel("all"));
-
-        recurso.add(
-                linkTo(methodOn(PacienteController.class).actualizar(run, null))
-                        .withRel("update"));
-
-        recurso.add(
-                linkTo(methodOn(PacienteController.class).crear(null))
-                        .withRel("create"));
-
-        return ResponseEntity.ok( //204
+        return ResponseEntity.ok(
                 ApiResponse.<Void>builder()
                         .success(true)
                         .message("paciente eliminado")

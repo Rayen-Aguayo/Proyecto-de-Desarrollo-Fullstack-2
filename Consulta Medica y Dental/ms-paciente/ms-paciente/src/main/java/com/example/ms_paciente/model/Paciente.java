@@ -29,5 +29,10 @@ public class Paciente {
 
     private String nroTelefono;
 
+    public String getRun() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getRun'");
+    }
+
 
 }

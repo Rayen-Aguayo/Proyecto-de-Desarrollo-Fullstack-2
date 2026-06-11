@@ -5,11 +5,12 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.example.Receta.Medica.client.MedicoClient;
-import com.example.Receta.Medica.dto.RecetaMedicaDTO;
-import com.example.Receta.Medica.dto.RecetaMedicaResponce;
-import com.example.Receta.Medica.model.RecetaMedica;
-import com.example.Receta.Medica.repository.RecetaMedicaRepository;
+import com.example.ms_receta.medica.client.MedicoClient;
+import com.example.ms_receta.medica.dto.MedicoResponse;
+import com.example.ms_receta.medica.dto.RecetaMedicaDTO;
+import com.example.ms_receta.medica.dto.RecetaMedicaResponce;
+import com.example.ms_receta.medica.model.RecetaMedica;
+import com.example.ms_receta.medica.repository.RecetaMedicaRepository;
 
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;

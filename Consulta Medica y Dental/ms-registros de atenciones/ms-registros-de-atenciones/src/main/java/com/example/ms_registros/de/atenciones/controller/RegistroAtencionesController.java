@@ -1,4 +1,4 @@
-package com.example.Registro.de.atenciones.controller;
+package com.example.ms_registros.de.atenciones.controller;
 
 import java.util.List;
 
@@ -6,10 +6,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.Registro.de.atenciones.dto.ApiResponse;
-import com.example.Registro.de.atenciones.dto.RegistroAtencionesDTO;
-import com.example.Registro.de.atenciones.dto.RegistroAtencionesResponse;
-import com.example.Registro.de.atenciones.service.RegistroAtencionesService;
+import com.example.ms_registros.de.atenciones.dto.ApiResponse;
+import com.example.ms_registros.de.atenciones.dto.RegistroAtencionesDTO;
+import com.example.ms_registros.de.atenciones.dto.RegistroAtencionesResponse;
+import com.example.ms_registros.de.atenciones.service.RegistroAtencionesService;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

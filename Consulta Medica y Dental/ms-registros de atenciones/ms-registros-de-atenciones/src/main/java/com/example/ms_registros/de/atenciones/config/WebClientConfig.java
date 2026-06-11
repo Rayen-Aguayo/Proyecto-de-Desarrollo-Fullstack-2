@@ -1,4 +1,4 @@
-package com.example.Registro.de.atenciones.config;
+package com.example.ms_registros.de.atenciones.config;
 
 import org.springframework.context.annotation.*;
 import org.springframework.web.reactive.function.client.WebClient;

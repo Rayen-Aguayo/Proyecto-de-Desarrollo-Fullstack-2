@@ -1,19 +1,17 @@
-package com.example.Registro.de.atenciones.service;
+package com.example.ms_registros.de.atenciones.service;
 
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.example.Registro.de.atenciones.client.MedicoClient;
-import com.example.Registro.de.atenciones.client.PacienteClient;
-import com.example.Registro.de.atenciones.client.PagosClient;
-import com.example.Registro.de.atenciones.dto.RegistroAtencionesDTO;
-import com.example.Registro.de.atenciones.dto.RegistroAtencionesResponse;
-import com.example.Registro.de.atenciones.model.RegistroAtenciones;
-import com.example.Registro.de.atenciones.repository.RegistroAtencionesRepository;
-
-
+import com.example.ms_registros.de.atenciones.client.MedicoClient;
+import com.example.ms_registros.de.atenciones.client.PacienteClient;
+import com.example.ms_registros.de.atenciones.client.PagosClient;
+import com.example.ms_registros.de.atenciones.dto.RegistroAtencionesDTO;
+import com.example.ms_registros.de.atenciones.dto.RegistroAtencionesResponse;
+import com.example.ms_registros.de.atenciones.model.RegistroAtenciones;
+import com.example.ms_registros.de.atenciones.repository.RegistroAtencionesRepository;
 
 import static net.logstash.logback.argument.StructuredArguments.keyValue;
 

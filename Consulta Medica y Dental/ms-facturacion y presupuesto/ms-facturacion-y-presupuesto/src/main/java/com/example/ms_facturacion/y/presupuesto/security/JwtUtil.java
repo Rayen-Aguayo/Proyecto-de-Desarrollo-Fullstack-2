@@ -1,4 +1,4 @@
-package com.example.Facturacion.y.Presupuesto.security;
+package com.example.ms_facturacion.y.presupuesto.security;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;

@@ -10,11 +10,12 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import org.springframework.security.web.access.AccessDeniedHandler;
-
 import com.example.ms_ficha.medica.dto.ApiResponse;
 import com.example.ms_ficha.medica.security.JwtFilter;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import org.springframework.security.web.access.AccessDeniedHandler;
+
 
 import jakarta.servlet.http.HttpServletResponse;
 

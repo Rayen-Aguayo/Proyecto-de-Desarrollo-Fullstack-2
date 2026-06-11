@@ -70,4 +70,9 @@ public class JwtFilter extends OncePerRequestFilter {
 
         chain.doFilter(req, res);
     }
+
+    private Object keyValue(String string, String user) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'keyValue'");
+    }
 }

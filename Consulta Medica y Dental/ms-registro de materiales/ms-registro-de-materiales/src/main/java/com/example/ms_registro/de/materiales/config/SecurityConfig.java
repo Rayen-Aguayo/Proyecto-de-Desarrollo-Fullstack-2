@@ -1,4 +1,4 @@
-package com.example.Registro.de.materiales.config;
+package com.example.ms_registro.de.materiales.config;
 
 import org.springframework.context.annotation.*;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
@@ -11,10 +11,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import org.springframework.security.web.access.AccessDeniedHandler;
-
-import com.example.Registro.de.materiales.dto.ApiResponse;
-import com.example.Registro.de.materiales.security.JwtFilter;
+import com.example.ms_registro.de.materiales.dto.ApiResponse;
+import com.example.ms_registro.de.materiales.security.JwtFilter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import jakarta.servlet.http.HttpServletResponse;

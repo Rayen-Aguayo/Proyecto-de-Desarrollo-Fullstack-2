@@ -1,12 +1,12 @@
-package com.example.Registro.de.materiales.service;
+package com.example.ms_registro.de.materiales.service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.example.Registro.de.materiales.dto.RegistroMaterialesDTO;
-import com.example.Registro.de.materiales.model.RegistroMateriales;
-import com.example.Registro.de.materiales.repository.RegistroMaterialesRepository;
+import com.example.ms_registro.de.materiales.dto.RegistroMaterialesDTO;
+import com.example.ms_registro.de.materiales.model.RegistroMateriales;
+import com.example.ms_registro.de.materiales.repository.RegistroMaterialesRepository;
 
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;

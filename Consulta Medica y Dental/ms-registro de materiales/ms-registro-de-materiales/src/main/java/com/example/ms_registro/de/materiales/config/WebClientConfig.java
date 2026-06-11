@@ -1,4 +1,4 @@
-package com.example.Registro.de.materiales.config;
+package com.example.ms_registro.de.materiales.config;
 
 import org.springframework.context.annotation.*;
 import org.springframework.web.reactive.function.client.WebClient;

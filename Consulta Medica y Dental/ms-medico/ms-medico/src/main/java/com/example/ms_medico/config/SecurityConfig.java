@@ -6,6 +6,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.*;
 
 import lombok.RequiredArgsConstructor;
+import tools.jackson.databind.ObjectMapper;
 
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
@@ -16,8 +17,6 @@ import org.springframework.security.web.AuthenticationEntryPoint;
 
 import com.example.ms_medico.dto.ApiResponse;
 import com.example.ms_medico.security.JwtFilter;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import jakarta.servlet.http.HttpServletResponse;
 
 @Configuration

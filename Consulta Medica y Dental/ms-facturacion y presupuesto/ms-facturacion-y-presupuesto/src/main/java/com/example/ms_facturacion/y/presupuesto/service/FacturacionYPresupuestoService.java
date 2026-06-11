@@ -67,9 +67,11 @@ public class FacturacionYPresupuestoService {
                 .stream()
                 .map(l -> mapToResponse(l, token))
                 .toList();
+
     }
 
     public FacturacionYPresupuestoResponse obtener(Long id, String token) {
+       
         FacturacionYPresupuesto facypre = repository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("FacturacionYPresupuesto no encontrado"));
 
